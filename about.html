@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Akhila</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Lucida Sans', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(169, 169, 247);
+      font-size: 1.04rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .aboutSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 60px 40px;
+      gap: 40px;
+      animation: fadeIn 1s ease-in;
+      flex-wrap: wrap;
+    }
+
+    .aboutLeft {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .aboutLeft h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: rgb(156, 73, 235);
+    }
+
+    .aboutLeft p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      color: #ddd;
+    }
+
+    .highlight {
+      color: rgb(169, 169, 247);
+      font-weight: bold;
+    }
+
+    .aboutRight {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .aboutRight img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(156, 73, 235, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .aboutRight img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Akhila's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/course.html">Course</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="aboutSection">
+      <div class="aboutLeft">
+        <h2><span class="purple">About Me</span></h2>
+        <p>
+          I am an aspiring <span class="highlight">software developer</span> with a strong passion for building
+          efficient, user-friendly applications. With a background in 
+          <span class="highlight">B.Tech in Information Technology</span>, I have a solid foundation in
+          <span class="highlight">Java</span>, <span class="highlight">Python</span>, and
+          <span class="highlight">JavaScript</span>, along with hands-on experience in 
+          <span class="highlight">web development</span> and 
+          <span class="highlight">software testing</span>.
+        </p>
+        <p>
+          I’m a quick learner, enthusiastic about solving real-world problems through code, 
+          and always eager to explore new technologies. My goal is to contribute to 
+          impactful projects and grow in a collaborative, innovation-driven environment.
+        </p>
+      </div>
+      <div class="aboutRight">
+        <img src="sd.png" alt="Software Developer Image" />
+      </div>
+    </section>
+  </main>
+</body>
+</html>

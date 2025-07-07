@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Akhila</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Lucida Sans', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(169, 169, 247);
+    }
+
+    .projects-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .projects-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: rgb(156, 73, 235);
+      margin-bottom: 40px;
+    }
+
+    .project-category {
+      margin-bottom: 50px;
+    }
+
+    .project-category h3 {
+      font-size: 2rem;
+      color: rgb(169, 169, 247);
+      margin-bottom: 20px;
+      border-left: 5px solid rgb(156, 73, 235);
+      padding-left: 15px;
+    }
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: rgb(18, 18, 62);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(156, 73, 235, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(156, 73, 235, 0.4);
+    }
+
+    .project-card h4 {
+      color: rgb(144, 198, 255);
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .project-card ul {
+      margin-left: 20px;
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+
+    .project-card a {
+      color: rgb(144, 198, 255);
+      text-decoration: underline;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .project-card a:hover {
+      color: rgb(173, 216, 255);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="left">Akhila's Portfolio</div>
+    <div class="right">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/course.html">Course</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="projects-section">
+    <h2>My Projects</h2>
+
+    <!-- Personal Project First -->
+    <div class="project-category">
+      <h3>My Project</h3>
+      <div class="project-list">
+        <div class="project-card">
+          <h4>Portfolio Website</h4>
+          <p>A personal website to showcase my profile, skills, and academic projects.</p>
+          <ul>
+            <li>Fully responsive design using HTML, CSS, and JavaScript.</li>
+            <li>Interactive sections: About, Courses, Contact, Projects.</li>
+            <li>Live resume and project showcase platform.</li>
+          </ul>
+          <a href="#">Visit Website</a>
+        </div>
+
+        <div class="project-card">
+      <h4>Maas Veggies – Billing Website</h4>
+      <p>An interactive vegetable billing and management system designed for admin use.</p>
+      <ul>
+        <li>Built using HTML, CSS, and JavaScript with a visually appealing UI.</li>
+        <li>Allows real-time editing of vegetable names, prices, and images.</li>
+        <li>Billing feature with total calculation and data persistence using localStorage.</li>
+        <li>Includes animated cards, dark/light mode toggle, and intuitive admin panel.</li>
+      </ul>
+      <a href="#">View Demo</a>
+    </div>
+      </div>
+    </div>
+
+    <!-- Group Projects Below -->
+    <div class="project-category">
+      <h3>Group Projects</h3>
+      <div class="project-list">
+
+        <div class="project-card">
+          <h4>Expense Tracker App <span style="font-size: 0.9rem; color:#aaa;">(3rd Year Mini Project)</span></h4>
+          <p>A collaborative web app to manage personal finances.</p>
+          <ul>
+            <li>Track income and categorized expenses with ease.</li>
+            <li>Clean, responsive UI for input and visualization.</li>
+            <li>Implemented with focus on user experience.</li>
+          </ul>
+          <a href="#">View Code</a>
+        </div>
+
+        <div class="project-card">
+          <h4>Blockchain for Data Transmission in Healthcare <span style="font-size: 0.9rem; color:#aaa;">(4th Year Main Project)</span></h4>
+          <p>Developed a secure system to transmit healthcare data using blockchain.</p>
+          <ul>
+            <li>Smart contracts for secure access and tamper-proof logging.</li>
+            <li>Used cloud storage for scalable, reliable access.</li>
+            <li>Ensured integrity, confidentiality, and transparency.</li>
+          </ul>
+          <a href="#">View Report</a>
+        </div>
+
+         
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
+
